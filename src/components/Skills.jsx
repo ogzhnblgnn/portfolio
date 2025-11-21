@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaServer, FaCode, FaDatabase, FaTools } from 'react-icons/fa';
+import { FaServer, FaCode, FaDatabase, FaTools, FaCube } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import SpotlightCard from './SpotlightCard';
 import RevealOnScroll from './RevealOnScroll';
@@ -9,28 +9,35 @@ const Skills = () => {
         {
             title: 'Backend',
             icon: <FaServer />,
-            skills: ['Java', 'Spring Boot', 'Python', 'Node.js', 'PHP (Symfony)'],
+            skills: ['Java Spring Boot', 'Python FastAPI & Django', 'PHP Symfony', 'Node.js'],
             color: 'var(--accent-blue)',
             spotColor: 'rgba(41, 151, 255, 0.15)'
         },
         {
             title: 'Frontend',
             icon: <FaCode />,
-            skills: ['React.js', 'Next.js', 'Vue.js', 'TypeScript', 'Tailwind CSS'],
+            skills: ['React.js', 'Next.js', 'Vue.js', 'JavaScript', 'TypeScript'],
             color: 'var(--accent-purple)',
             spotColor: 'rgba(191, 90, 242, 0.15)'
         },
         {
-            title: 'Data & AI',
-            icon: <FaDatabase />,
-            skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Keras', 'TensorFlow'],
+            title: 'AI',
+            icon: <FaCube />,
+            skills: ['Data Analysis', 'Data Visualization', 'Machine Learning & AI', 'Computer Vision', 'Pattern Recog.'],
             color: 'var(--accent-indigo)',
             spotColor: 'rgba(94, 92, 230, 0.15)'
         },
         {
-            title: 'DevOps',
+            title: 'Database',
+            icon: <FaDatabase />,
+            skills: ['PostgreSQL', 'MySQL', 'MongoDB'],
+            color: 'var(--accent-indigo)',
+            spotColor: 'rgba(94, 92, 230, 0.15)'
+        },
+        {
+            title: 'Extra',
             icon: <FaTools />,
-            skills: ['Docker', 'AWS (S3)', 'Git/GitHub', 'Agile', 'CI/CD'],
+            skills: ['Git/GitHub', 'Agile', 'CI/CD'],
             color: 'var(--text-secondary)',
             spotColor: 'rgba(255, 255, 255, 0.1)'
         }

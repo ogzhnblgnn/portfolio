@@ -87,7 +87,7 @@ const Projects = () => {
                                     </div>
 
                                     <p style={{ marginBottom: '2rem', color: 'var(--text-secondary)', fontSize: '1.2rem', maxWidth: '700px' }}>
-                                        Developed a real-time Sign Language Recognition app using <strong>Python (Keras)</strong> and <strong>React Native</strong>.
+                                        Developed a real-time Sign Language Recognition app using <strong>Python</strong> and <strong>React Native</strong>.
                                         This project was awarded <span style={{ color: '#FFD700', fontWeight: '600' }}>2nd place</span> in the graduation project competition.
                                     </p>
 
@@ -107,7 +107,7 @@ const Projects = () => {
                                     </div>
 
                                     <div style={{ display: 'flex', gap: '1.5rem' }}>
-                                        <a href="#" className="btn btn-primary" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>
+                                        <a href="https://github.com/ogzhnblgnn/sign-language-detection-main" className="btn btn-primary" style={{ padding: '0.6rem 1.2rem', fontSize: '0.9rem' }}>
                                             View Details
                                         </a>
                                     </div>

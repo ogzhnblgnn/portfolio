@@ -16,8 +16,8 @@ const Experience = () => {
             date: 'Mar 2024 -- Jun 2024',
             description: [
                 'Architected a social media analysis app integrating AI for sentiment analysis.',
-                'Built complex backend structures using PHP Symfony and relational databases.',
-                'Implemented E2E and Unit tests (99% reliability).'
+                'Built complex backend structures using Vue.js, PHP Symfony and relational databases.',
+                'Implemented E2E and Unit Tests.'
             ]
         },
         {
@@ -36,9 +36,9 @@ const Experience = () => {
             date: 'Sep 2022 -- Jan 2024',
             description: [
                 'Developed critical backend/frontend modules for large-scale Municipal Management Systems.',
-                'Enhanced ERP Systems for enterprise clients, customizing Java Spring Boot & React workflows.',
-                'Developed Microservices for "Commerscope," an integration platform.',
-                'Engineered "Sehrin Gozu" (disaster assessment) by integrating Python AI models.'
+                'Enhanced ERP Systems for enterprise clients, customizing Java Spring Boot & Vue.js workflows.',
+                'Developed Microservices and worked frontend updates for "Commerscope," an integration platform.',
+                'Engineered "Sehrin Gozu" (disaster assessment) by integrating Python AI models and OpenCV.'
             ]
         },
         {
