@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from './ThemeToggle';
 import logo from '../assets/logo.png';
+import logoLight from '../assets/logo_light.png';
 
 const Header = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -57,9 +58,15 @@ const Header = ({ theme, toggleTheme }) => {
             >
                 <a href="#" style={{ display: 'block' }}>
                     <img
-                        src={logo}
+                        src={theme === 'light' ? logoLight : logo}
                         alt="Logo"
-                        style={{
+                        style={theme === 'light' ? {
+                            height: '33px',
+                            width: 'auto',
+                            marginLeft: '25px',
+                            position: 'relative',
+                            zIndex: 10,
+                        } : {
                             height: '120px',
                             width: 'auto',
                             margin: '-45px 0',
