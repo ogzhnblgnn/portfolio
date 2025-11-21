@@ -4,42 +4,44 @@ import { motion } from 'framer-motion';
 import SpotlightCard from './SpotlightCard';
 import RevealOnScroll from './RevealOnScroll';
 
-const Skills = () => {
+const Skills = ({ theme }) => {
+    const isLight = theme === 'light';
+
     const skillCategories = [
         {
             title: 'Backend',
             icon: <FaServer />,
             skills: ['Java Spring Boot', 'Python FastAPI & Django', 'PHP Symfony', 'Node.js'],
             color: 'var(--accent-blue)',
-            spotColor: 'rgba(41, 151, 255, 0.15)'
+            spotColor: isLight ? 'rgba(41, 151, 255, 0.3)' : 'rgba(41, 151, 255, 0.15)'
         },
         {
             title: 'Frontend',
             icon: <FaCode />,
             skills: ['React.js', 'Next.js', 'Vue.js', 'JavaScript', 'TypeScript'],
             color: 'var(--accent-purple)',
-            spotColor: 'rgba(191, 90, 242, 0.15)'
+            spotColor: isLight ? 'rgba(191, 90, 242, 0.3)' : 'rgba(191, 90, 242, 0.15)'
         },
         {
             title: 'AI',
             icon: <FaCube />,
-            skills: ['Data Analysis', 'Data Visualization', 'Machine Learning & AI', 'Computer Vision', 'Pattern Recog.'],
+            skills: ['Data Analysis', 'Data Visualization', 'Machine Learning & AI', 'Computer Vision', 'Pattern Recognition'],
             color: 'var(--accent-indigo)',
-            spotColor: 'rgba(94, 92, 230, 0.15)'
+            spotColor: isLight ? 'rgba(94, 92, 230, 0.3)' : 'rgba(94, 92, 230, 0.15)'
         },
         {
             title: 'Database',
             icon: <FaDatabase />,
             skills: ['PostgreSQL', 'MySQL', 'MongoDB'],
             color: 'var(--accent-indigo)',
-            spotColor: 'rgba(94, 92, 230, 0.15)'
+            spotColor: isLight ? 'rgba(94, 92, 230, 0.3)' : 'rgba(94, 92, 230, 0.15)'
         },
         {
             title: 'Extra',
             icon: <FaTools />,
             skills: ['Git/GitHub', 'Agile', 'CI/CD'],
             color: 'var(--text-secondary)',
-            spotColor: 'rgba(255, 255, 255, 0.1)'
+            spotColor: isLight ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)'
         }
     ];
 
@@ -56,7 +58,7 @@ const Skills = () => {
                     gap: '1.5rem'
                 }}>
                     {skillCategories.map((category, index) => (
-                        <RevealOnScroll key={index}>
+                        <RevealOnScroll key={index} className="h-full">
                             <div style={{ height: '100%' }}>
                                 <SpotlightCard
                                     className="glass-panel"

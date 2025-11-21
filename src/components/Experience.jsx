@@ -13,7 +13,7 @@ const Experience = () => {
         {
             title: 'Full Stack Developer',
             company: 'Multimedya Atölyesi',
-            date: 'Mar 2024 -- Jun 2024',
+            date: 'Mar 2024 / Jun 2024',
             description: [
                 'Architected a social media analysis app integrating AI for sentiment analysis.',
                 'Built complex backend structures using Vue.js, PHP Symfony and relational databases.',
@@ -23,7 +23,7 @@ const Experience = () => {
         {
             title: 'Full Stack Developer (Freelance)',
             company: 'Dopinggo',
-            date: 'Jun 2024 -- Nov 2024',
+            date: 'Jun 2024 / Nov 2024',
             description: [
                 'Designed a custom CRM dashboard using Next.js and TypeScript.',
                 'Integrated AWS S3 for scalable cloud storage solutions.',
@@ -33,7 +33,7 @@ const Experience = () => {
         {
             title: 'Full Stack Java Developer',
             company: 'IND Bilişim',
-            date: 'Sep 2022 -- Jan 2024',
+            date: 'Sep 2022 / Jan 2024',
             description: [
                 'Developed critical backend/frontend modules for large-scale Municipal Management Systems.',
                 'Enhanced ERP Systems for enterprise clients, customizing Java Spring Boot & Vue.js workflows.',
@@ -44,7 +44,7 @@ const Experience = () => {
         {
             title: 'Frontend Developer Intern',
             company: 'Jaliri',
-            date: 'Apr 2021 -- Aug 2021',
+            date: 'Apr 2021 / Aug 2021',
             description: [
                 'Built responsive UI components with React.js for an e-commerce platform.',
                 'Created API documentation using Swagger.'
@@ -53,7 +53,7 @@ const Experience = () => {
         {
             title: 'Backend Developer Intern',
             company: 'Site Destek',
-            date: 'Jun 2020 -- Sep 2020',
+            date: 'Jun 2020 / Sep 2020',
             description: [
                 'Developed RESTful APIs using PHP (CodeIgniter) and MySQL.',
                 'Optimized database queries to improve system performance.'
@@ -113,7 +113,7 @@ const Experience = () => {
                                         }}
                                     />
 
-                                    <div className="glass-panel" style={{ padding: '2rem' }}>
+                                    <div className="glass-panel-liquid" style={{ padding: '2rem' }}>
                                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '1rem' }}>
                                             <h3 style={{ margin: 0, fontSize: '1.5rem', color: 'var(--text-primary)' }}>{exp.title}</h3>
                                             <span style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--accent-blue)' }}>{exp.date}</span>

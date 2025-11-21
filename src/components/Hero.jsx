@@ -146,7 +146,7 @@ const Hero = () => {
                         marginRight: 'auto'
                     }}
                 >
-                    Innovative Developer & MSc Student. Specializing in scalable web apps and AI integration.
+                    Full-Stack Developer & MSc Student in AI Technologies. Specializing in scalable projects and AI integration.
                 </motion.p>
 
                 <motion.div

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import ThemeToggle from './ThemeToggle';
+import logo from '../assets/logo.png';
 
-const Header = () => {
+const Header = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -44,17 +46,27 @@ const Header = () => {
                     alignItems: 'center',
                     padding: '0.75rem 1.5rem',
                     borderRadius: scrolled ? 'var(--radius-xl)' : '0',
-                    background: scrolled ? 'rgba(28, 28, 30, 0.65)' : 'transparent',
+                    background: scrolled ? 'var(--glass-bg)' : 'transparent',
                     backdropFilter: scrolled ? 'blur(20px)' : 'none',
                     WebkitBackdropFilter: scrolled ? 'blur(20px)' : 'none',
-                    border: scrolled ? '1px solid rgba(255,255,255,0.1)' : '1px solid transparent',
+                    border: scrolled ? '1px solid var(--glass-border)' : '1px solid transparent',
                     transition: 'all 0.3s ease',
                     maxWidth: scrolled ? '90%' : '1200px',
                     margin: '0 auto',
                 }}
             >
-                <a href="#" style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--text-primary)' }}>
-                    OB.
+                <a href="#" style={{ display: 'block' }}>
+                    <img
+                        src={logo}
+                        alt="Logo"
+                        style={{
+                            height: '120px',
+                            width: 'auto',
+                            margin: '-45px 0',
+                            position: 'relative',
+                            zIndex: 10
+                        }}
+                    />
                 </a>
 
                 {/* Desktop Nav */}
@@ -74,6 +86,10 @@ const Header = () => {
                             {link.name}
                         </a>
                     ))}
+                    <a href="#contact" className="btn btn-primary" style={{ fontSize: '0.9rem', padding: '0.5rem 1.2rem' }}>
+                        Let's Talk
+                    </a>
+                    <ThemeToggle isDark={theme === 'dark'} toggleTheme={toggleTheme} />
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -121,7 +137,7 @@ const Header = () => {
 
             <style>{`
         @media (min-width: 768px) {
-          .desktop-nav { display: flex !important; }
+          .desktop-nav { display: flex !important; align-items: center; }
           .mobile-menu-btn { display: none !important; }
         }
         @media (max-width: 767px) {

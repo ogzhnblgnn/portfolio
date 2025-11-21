@@ -5,7 +5,7 @@ import MagneticButton from './MagneticButton';
 
 const Contact = () => {
     return (
-        <footer id="contact" style={{ backgroundColor: 'var(--bg-secondary)', color: 'var(--text-primary)', padding: '6rem 0 3rem' }}>
+        <footer id="contact" style={{ background: 'var(--contact-gradient)', color: 'var(--text-primary)', padding: '6rem 0 3rem' }}>
             <div className="container" style={{ textAlign: 'center' }}>
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
@@ -57,9 +57,6 @@ const Contact = () => {
                     </MagneticButton>
                 </motion.div>
 
-                <div style={{ borderTop: '1px solid var(--glass-border)', paddingTop: '2rem', fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>
-                    <p>&copy; {new Date().getFullYear()} Oğuzhan Bilgin. All rights reserved.</p>
-                </div>
             </div>
             <style>{`
         .social-icon:hover { color: var(--text-primary) !important; }
